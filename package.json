@@ -1,0 +1,27 @@
+{
+  "name": "whycantiuseleen.github.io",
+  "version": "1.0.0",
+  "description": "Web Developer/Designer Portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whycantiuseleen/whycantiuseleen.github.io.git"
+  },
+  "author": "Eileen To",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whycantiuseleen/whycantiuseleen.github.io/issues"
+  },
+  "homepage": "https://github.com/whycantiuseleen/whycantiuseleen.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
