@@ -1,0 +1,42 @@
+$primary-color: #FBD544;
+$secondary-color: #251605;
+$accent-color: #D6D4D5;
+
+.desc-font{
+    font-family: 'Playfair Display', serif;
+    .black{
+        font-weight: 900;
+    }
+    .paragraph{
+        line-height: 2.5rem;
+    }
+}
+  
+button{
+    background: none;
+    &.header{
+        border:none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+}
+
+
+
+.navbar{
+    background-color: black;
+    height: 3rem;
+    .text{
+        color: $primary-color;
+    }
+}
+
+.mainimage{
+    width: 50%;
+    overflow: hidden;
+}
+
+img{
+    max-width: 100%;
+}
