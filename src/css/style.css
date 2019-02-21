@@ -1,7 +1,8 @@
 .desc-font {
   font-family: 'Playfair Display', serif; }
   .desc-font .black {
-    font-weight: 900; }
+    font-weight: 900;
+    letter-spacing: 0.1rem; }
   .desc-font .paragraph {
     line-height: 2.5rem; }
 
@@ -12,6 +13,20 @@ button {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: bolder; }
+  button.header:hover {
+    cursor: pointer; }
+  button.primary {
+    font-family: 'Playfair Display', serif;
+    padding: 0.75rem;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    font-weight: bold;
+    border: 0.1rem solid #251605;
+    transition: 0.3s; }
+  button.primary:hover {
+    background-color: #251605;
+    cursor: pointer;
+    color: white; }
 
 .navbar {
   background-color: black;
@@ -19,9 +34,21 @@ button {
   .navbar .text {
     color: #FBD544; }
 
-.mainimage {
-  width: 50%;
-  overflow: hidden; }
-
 img {
   max-width: 100%; }
+  img .mainimage {
+    width: 50%;
+    overflow: hidden; }
+
+.overlay-text {
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  top: 13rem;
+  right: 4rem;
+  text-align: right;
+  font-weight: bolder;
+  font-size: 5rem;
+  letter-spacing: 0.4rem; }
+
+.mt-6 {
+  margin-top: 3.5rem; }
