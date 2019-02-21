@@ -6,6 +6,7 @@ $accent-color: #D6D4D5;
     font-family: 'Playfair Display', serif;
     .black{
         font-weight: 900;
+        letter-spacing: 0.1rem;
     }
     .paragraph{
         line-height: 2.5rem;
@@ -20,9 +21,26 @@ button{
         font-size: 1rem;
         font-weight: bolder;
     }
+    &.header:hover{
+        cursor: pointer;
+    }
+    &.primary{
+        font-family: 'Playfair Display', serif;
+        padding: 0.75rem;
+        padding-left: 2.25rem;
+        padding-right: 2.25rem;
+        font-weight: bold;
+        border: 0.1rem solid $secondary-color;
+        transition: 0.3s;
+    }
+    &.primary:hover{
+        background-color: $secondary-color;
+        cursor: pointer;
+        color:white;
+
+        
+    }
 }
-
-
 
 .navbar{
     background-color: black;
@@ -32,11 +50,28 @@ button{
     }
 }
 
-.mainimage{
-    width: 50%;
-    overflow: hidden;
-}
 
 img{
     max-width: 100%;
+    .mainimage{
+        width: 50%;
+        overflow: hidden;
+    }
 }
+
+.overlay-text{
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 13rem;
+    right: 4rem;
+    text-align: right;
+    font-weight: bolder;
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+}
+
+.mt-6{
+    margin-top:3.5rem;
+}
+
+
