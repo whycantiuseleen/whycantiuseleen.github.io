@@ -3,8 +3,6 @@ $secondary-color: #c6c6c6;
 $accent-color1: #000000;
 $accent-color2: #E0E0E0;
 
-
-
 *{
     font-family: 'Raleway', sans-serif;
     color: $primary-color;
@@ -35,6 +33,39 @@ $accent-color2: #E0E0E0;
     }
 }
 
+#body{
+    margin-top: 8rem;
+}
+
+.scrollbar{
+    .dot{
+        height: 25px;
+        width: 25px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+    }
+}
+
+.section-header-no{
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: $secondary-color;
+}
+
+.section-header{
+    font-family: 'Playfair Display', 'serif';
+    font-weight: bold;
+    color: black;
+    letter-spacing: 0.1rem;
+    text-shadow: 0px 3px 6px $accent-color2;
+    margin-left: 6.125rem;
+}
+
+.section-line{
+    border-right:2px solid $secondary-color;
+}
+
 .primary-button{
     font-family: 'Raleway', sans-serif;
     border: none;
@@ -49,9 +80,11 @@ $accent-color2: #E0E0E0;
     padding-right: 4.25rem;
     box-shadow: 0px 6px 6px $accent-color2;
 }
+
 .primary-button:hover{
     font-family: 'Raleway', sans-serif;
     border: none;
+    cursor: pointer;
   
     background: $secondary-color;
     border-color: $primary-color;
@@ -79,4 +112,27 @@ $accent-color2: #E0E0E0;
     padding-left: 4.25rem;
     padding-right: 4.25rem;
     box-shadow: 0px 6px 6px $accent-color2;   
+}
+
+.links{
+    background: $accent-color2;
+    #footer{
+        padding: 1rem;
+        margin: 0 auto;
+        display: inline;
+        text-align: center;
+        a{
+            letter-spacing: 0.1rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+        a:hover{
+            cursor: pointer;
+        }
+    }
+    
+}
+
+img{
+    width: 100%;
 }

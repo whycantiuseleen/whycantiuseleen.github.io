@@ -23,6 +23,32 @@
     margin-bottom: 0rem;
     font-weight: bold; }
 
+#body {
+  margin-top: 8rem; }
+
+.scrollbar .dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block; }
+
+.section-header-no {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: #c6c6c6; }
+
+.section-header {
+  font-family: 'Playfair Display', 'serif';
+  font-weight: bold;
+  color: black;
+  letter-spacing: 0.1rem;
+  text-shadow: 0px 3px 6px #E0E0E0;
+  margin-left: 6.125rem; }
+
+.section-line {
+  border-right: 2px solid #c6c6c6; }
+
 .primary-button {
   font-family: 'Raleway', sans-serif;
   border: none;
@@ -38,6 +64,7 @@
 .primary-button:hover {
   font-family: 'Raleway', sans-serif;
   border: none;
+  cursor: pointer;
   background: #c6c6c6;
   border-color: #595959;
   color: black;
@@ -60,3 +87,20 @@
   padding-left: 4.25rem;
   padding-right: 4.25rem;
   box-shadow: 0px 6px 6px #E0E0E0; }
+
+.links {
+  background: #E0E0E0; }
+  .links #footer {
+    padding: 1rem;
+    margin: 0 auto;
+    display: inline;
+    text-align: center; }
+    .links #footer a {
+      letter-spacing: 0.1rem;
+      margin-right: 1rem;
+      margin-left: 1rem; }
+    .links #footer a:hover {
+      cursor: pointer; }
+
+img {
+  width: 100%; }
