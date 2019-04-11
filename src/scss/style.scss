@@ -3,9 +3,18 @@ $secondary-color: #c6c6c6;
 $accent-color1: #000000;
 $accent-color2: #E0E0E0;
 
+
 body{
     overflow-x: hidden;
     overflow-y: scroll;
+}
+
+button:focus{
+    outline: $accent-color2;
+}
+
+img{
+    width: 100%;
 }
 
 *{
@@ -13,6 +22,9 @@ body{
     color: $primary-color;
     letter-spacing: 0.05rem;
 }
+
+
+// Element Styling
 
 .header{
     background:white;
@@ -44,6 +56,7 @@ body{
         padding: 1.5rem;
         padding-left: 4.25rem;
         padding-right: 4.25rem;
+       
     }
 }
 
@@ -133,6 +146,7 @@ body{
         border-style: none;
         color: black;
     }
+    
 }
 
 
@@ -155,6 +169,3 @@ body{
     
 }
 
-img{
-    width: 100%;
-}

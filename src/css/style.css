@@ -2,6 +2,12 @@ body {
   overflow-x: hidden;
   overflow-y: scroll; }
 
+button:focus {
+  outline: #E0E0E0; }
+
+img {
+  width: 100%; }
+
 * {
   font-family: 'Raleway', sans-serif;
   color: #595959;
@@ -111,6 +117,3 @@ body {
       margin-left: 1rem; }
     .links #footer a:hover {
       cursor: pointer; }
-
-img {
-  width: 100%; }
