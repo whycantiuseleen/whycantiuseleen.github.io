@@ -11,25 +11,192 @@
     </head>
 
     <body>
-        <div class="container">            
+        <div class="container">
             <div class="row mt-5">
                 <div class="col-4 col-md-5 col-lg-5">
-                    <button class="header">HOME</button>
-                    <button class="header">ABOUT</bu tton>
-                    <button class="header">WORKS</button>
+                    <a href="index.html">
+                        <button class="nav-header" id='home'>HOME</button>
+                    </a>
+                    <button class="nav-header" id='about'>ABOUT</button>
+                    <button class="nav-header" id='works'>WORKS</button>
                 </div>
-
+    
                 <div class="col-md-5 col-lg-3 offset-md-2 offset-lg-4">
                     <a href="mailto:eileen_to@mymail.sutd.edu.sg">
-                        <button class="header">eileen_to@mymail.sutd.edu.sg</button>
+                        <button class="nav-header">eileen_to@mymail.sutd.edu.sg</button>
                     </a>
                 </div>
-
             </div>
         </div>
+        
 
-        
-        
+        <div class="row mt-4">
+            <img src="assets/sothea/sothea_pp.jpg" class="project-image">
+        </div>
+
+
+        <div class="container" id="project-page">
+
+            <div class="row">
+                <div class="col-12 col-lg-5 project-details">
+                    <p class="role">UI, Interaction Design</p>
+                    <p><i>Jan 2019 - Apr 2019</i></p>
+                    <p class="collaboration">In collaboration with: 
+                    <br/>Tessa Goh | Lok Swen | Ray | Brian </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="title">THE PROJECT</h1>
+
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="proj-header">BACKGROUND</h3>
+                            <p>Due to the political unrest in Cambodia, adminstration
+                            of the national record was not properly done during those periods and
+                            hence there is a lack of centralised national records for identification. 
+                            This makes the medical health screenings in Cambodian villages highly 
+                            inefficient as numerous man hours are often wasted on the retrieval of 
+                            medical histories as well as on identifying both new and revisiting patients.  
+                    
+                            To alleviate this problem, a medical database was set up by SUTD Makerspace 
+                            with an accompanying web application for the NUS medical students who 
+                            provides free health screenings for the Cambodians annually. 
+                            </p>
+            
+                            <p>However, there were negative feedbacks from the medical students regarding
+                                the web application and hence the team will be looking into redesigning this 
+                                web application to help ease their pain points.
+                            </p>   
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="proj-header">GOALS</h3>
+                            <ul>
+                                <li>Reduce the time taken for the Medical Screenings</li>
+                                <li>Increase Doctor-Patient Interaction during the Doctor's Consultation</li>
+                                <li>Reduce User Cognitive Load</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+          
+            </div>
+         
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="title">PROCESS</h1>    
+
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="proj-header">01 DISCOVER</h3>
+                            <p>To understand about our user's pain-points, we have gathered 
+                                their feedback and also analyzed the existing user interface.
+                            </p>
+                            <hr>
+
+                            <div class="row mt-4">
+                                <div class="col-lg-4 offset-lg-1 quote">
+                                    <p>
+                                        "Cambodian patients usually 
+                                        have very <b>short-attention span</b> and hence there 
+                                        are many that dropped out halfway through the 
+                                        screening since it <b>takes too long for us to 
+                                        screen them and fill in the forms.</b>"
+                                        <br/><br/>- NUS Medical Student</span>
+                                    </p>
+                                </div>
+                            
+                                <div class="col-lg-4 offset-lg-1 quote">
+                                    <p>
+                                        "The interface is <b>messy and 
+                                        unintuitive</b> as information is all over the place. 
+                                        It takes <b>too long for us to obtain the information for 
+                                        diagnosis to be made.</b>" <br/><br/>- NUS Medical Student</p>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row mt-5">
+                    
+
+                                <div class="col-12 col-lg-12">
+                                    <p>Areas for improvements were identified in 
+                                        the existing UI which includes the following:
+                                        <li>Possible user-driven error <span class="subtitle"><br>
+                                            e.g. clear-all button is currently placed right beside the submit button
+                                        </span></li>
+                                        <li>Graphic design concerns: proper alignment, colors and 
+                                            rearrangement of field</li>
+                                        <li>Prioritizing of information</li>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>     
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="proj-header">02 ANALYSIS</h3>
+                            <!-- OLD UI Analysis -->
+                            <p>Since there were feedback regarding the dropouts 
+                                during the screening process due to the short-attention 
+                                span that the Cambodians have, one of our project goals was 
+                                hence to <b>shorten the total time taken for the 
+                                whole screening process</b>. This means that we had to focus 
+                                on <b>shortening the time taken for the form-filling</b> and to 
+                                <b>increase Doctor-Patient interaction so that the patients 
+                                will feel engaged in the session itself</b>. We also aimed 
+                                to <b>reduce cognitive load for the users</b>,
+                                allowing them to focus better for each session.
+                            </p>
+
+                            <!-- User Flows Identified -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p>Two different user flows were identified for this project: 
+                                        <li>Medical staffs who are assigned to the 4 different medical stations</li>
+                                        <li>Doctors who are in charge of carrying out the consultation sessions.</li>
+                                    </p>
+                                </div>
+
+                            </div>
+                            
+                
+                        </div>
+                    </div>
+                    
+                    
+
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="proj-header">03 DESIGN</h3>
+                            <!-- Wireframes -->
+
+                            <!-- Key Features -->
+                            <!-- Final Design -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="proj-header">04 EVALUATION</h3>
+                            <!-- Testing -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </div>
 
         <div class="row mt-5 links">
             <div id="footer">
