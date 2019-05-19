@@ -102,6 +102,9 @@ img {
   #project-page .proj-header {
     font-weight: bold;
     margin-top: 0.5rem; }
+  #project-page .subtitle {
+    font-size: 0.8em;
+    font-style: italic; }
 
 .primary-button {
   font-family: 'Raleway', sans-serif;
