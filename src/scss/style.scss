@@ -3,6 +3,13 @@ $secondary-color: #c6c6c6;
 $accent-color1: #000000;
 $accent-color2: #E0E0E0;
 
+// Breakpoints
+
+$mobile-portrait: 767px;
+// $mobile-landscape:
+// $tablet-portrait:
+// $tablet-landscape:
+
 
 body{
     overflow-x: hidden;
@@ -155,6 +162,11 @@ img{
    
 }
 
+#proj-navigation{
+    text-align: center;
+    display: inline;  
+}
+
 .primary-button{
     font-family: 'Raleway', sans-serif;
     color: white;
@@ -181,6 +193,19 @@ img{
         color: black;
     }
     
+}
+
+.secondary-button{
+    font-family: 'Raleway', sans-serif;
+    color: $accent-color1;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+
+    border: 0.1rem solid $accent-color1;
+    background: none;
+    padding: 0.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 
