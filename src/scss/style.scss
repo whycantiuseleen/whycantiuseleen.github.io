@@ -20,6 +20,17 @@ button:focus{
     outline: $accent-color2;
 }
 
+button{
+    font-family: 'Raleway','sans-serif';
+    &.material-icons{
+        background: none;
+        border: none;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
 img{
     width: 100%;
 }
@@ -162,9 +173,18 @@ img{
    
 }
 
-#proj-navigation{
+.proj-navigation{
     text-align: center;
     display: inline;  
+    .button-proj{
+        background: none;
+        border: none;
+        letter-spacing: 0.05rem; 
+        &:hover{
+            cursor: pointer;
+            border-bottom: 0.1rem solid $secondary-color;
+        }
+    }
 }
 
 .primary-button{
@@ -198,10 +218,10 @@ img{
 .secondary-button{
     font-family: 'Raleway', sans-serif;
     color: $accent-color1;
-    font-size: 1rem;
+    font-size: 0.8rem;
     letter-spacing: 0.15rem;
 
-    border: 0.1rem solid $accent-color1;
+    border: 0.1rem solid $primary-color;
     background: none;
     padding: 0.8rem;
     padding-left: 2rem;
@@ -228,3 +248,27 @@ img{
     
 }
 
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}

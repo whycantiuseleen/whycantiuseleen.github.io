@@ -5,6 +5,14 @@ body {
 button:focus {
   outline: #E0E0E0; }
 
+button {
+  font-family: 'Raleway','sans-serif'; }
+  button.material-icons {
+    background: none;
+    border: none; }
+    button.material-icons:hover {
+      cursor: pointer; }
+
 img {
   width: 100%; }
 
@@ -106,9 +114,16 @@ img {
     font-size: 0.8em;
     font-style: italic; }
 
-#proj-navigation {
+.proj-navigation {
   text-align: center;
   display: inline; }
+  .proj-navigation .button-proj {
+    background: none;
+    border: none;
+    letter-spacing: 0.05rem; }
+    .proj-navigation .button-proj:hover {
+      cursor: pointer;
+      border-bottom: 0.1rem solid #c6c6c6; }
 
 .primary-button {
   font-family: 'Raleway', sans-serif;
@@ -134,9 +149,9 @@ img {
 .secondary-button {
   font-family: 'Raleway', sans-serif;
   color: #000000;
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 0.15rem;
-  border: 0.1rem solid #000000;
+  border: 0.1rem solid #595959;
   background: none;
   padding: 0.8rem;
   padding-left: 2rem;
@@ -155,3 +170,25 @@ img {
       margin-left: 1rem; }
     .links #footer a:hover {
       cursor: pointer; }
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
