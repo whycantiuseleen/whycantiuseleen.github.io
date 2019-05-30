@@ -234,7 +234,18 @@ img{
         font-size: 0.8em;
         font-style: italic;
     }
-   
+
+    //aerial defence
+    @media screen and (min-width:$tablet-min-width) and (max-width:$tablet-max-width) {
+        .margin-interaction{
+            margin-top:1rem;
+        }
+        .description{
+        
+        }
+            
+    }
+    
 }
 
 .proj-navigation{
@@ -250,6 +261,8 @@ img{
         }
     }
 }
+
+
 
 .primary-button{
     font-family: 'Raleway', sans-serif;
