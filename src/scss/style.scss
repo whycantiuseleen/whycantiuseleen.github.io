@@ -156,6 +156,11 @@ img{
 
     .description{
         margin-top: 1.5rem;
+        @media screen and (min-width:$tablet-min-width) and (max-width: $tablet-max-width){
+            margin-top:0rem;
+
+        }
+        
         button{
             margin-top: 1rem;
             @media screen and (min-width:$tablet-min-width) and (max-width:$tablet-max-width){
@@ -163,10 +168,8 @@ img{
             }
     
         }
-        @media screen and (min-width:$tablet-min-width) and (max-width: $tablet-max-width){
-            margin-top:0rem;
 
-        }
+       
     }
 
 }

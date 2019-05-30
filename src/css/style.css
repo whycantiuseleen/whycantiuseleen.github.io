@@ -105,14 +105,14 @@ img {
 
 #body .description {
   margin-top: 1.5rem; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    #body .description {
+      margin-top: 0rem; } }
   #body .description button {
     margin-top: 1rem; }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       #body .description button {
         margin-top: 0rem; } }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    #body .description {
-      margin-top: 0rem; } }
 
 .scrollbar .dot {
   height: 25px;
