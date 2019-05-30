@@ -5,7 +5,7 @@ $accent-color2: #E0E0E0;
 
 // Breakpoints
 
-$mobile-max-width: 767px;
+$mobile-max-width: 420px;
 
 $tablet-min-width: 768px;
 $tablet-max-width: 1024px;
@@ -51,6 +51,12 @@ img{
     &:hover{
         cursor: pointer;
     }
+
+    @media screen and (max-width:$mobile-max-width){
+        &.email{
+            display:none;
+        }
+    }
 }
 
 #main{
@@ -63,6 +69,16 @@ img{
         margin-bottom: 6rem;
         font-size:2rem;
     }
+    @media screen and (max-width: $mobile-max-width){
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        .primary-button{
+            display: none;
+        }
+        
+    }
+    
     .name-header{
         font-family: 'Playfair Display', serif;
         font-size: 6.25rem;
@@ -73,6 +89,11 @@ img{
         text-shadow: 0px 6px 6px $accent-color2;
         @media screen and (min-width : $tablet-min-width) and (max-width : $tablet-max-width) {
             font-size: 6rem;
+        }
+
+        @media screen and (max-width: $mobile-max-width){
+            font-size: 3rem;
+           
         }
     
 
@@ -109,14 +130,16 @@ img{
         border-right:2px solid $secondary-color;
         &.about{
             max-width: 14.66667%;
-            @media screen and (min-width: $tablet-min-width) and (max-width:$tablet-max-width) {
+            @media screen and (max-width:$tablet-max-width) {
                 display: none; 
             }
+           
         }
+
         &.works{
-            @media screen and (min-width: $tablet-min-width) and (max-width:$tablet-max-width) {
+            margin-bottom: 1.5rem;
+            @media screen and (max-width:$tablet-max-width) {
                 border-right: none;
-                
                 .section-header-no{
                     display: none; 
                 }
@@ -124,6 +147,10 @@ img{
                     margin-left:0rem;
                 }
             }
+            @media screen and (max-width:$mobile-max-width){
+                margin-bottom:0rem;
+            }
+           
         }
     }
 
@@ -134,6 +161,7 @@ img{
             @media screen and (min-width:$tablet-min-width) and (max-width:$tablet-max-width){
                 margin-top:0rem;
             }
+    
         }
         @media screen and (min-width:$tablet-min-width) and (max-width: $tablet-max-width){
             margin-top:0rem;
@@ -156,9 +184,12 @@ img{
 .project-card{
     margin-bottom: 5rem;
     @media screen and (min-width : $tablet-min-width) and (max-width : $tablet-max-width) {
-        /* Styles */
         margin-bottom:2.5rem;
     }
+    @media screen and (max-width : $mobile-max-width) {
+        margin-bottom:2.5rem;
+    }
+
 
     .title{
         font-weight:bold;
@@ -166,7 +197,9 @@ img{
         color:black;
       
         @media screen and (min-width : $tablet-min-width) and (max-width : $tablet-max-width) {
-            /* Styles */
+            margin-top: 1rem;
+        }
+        @media screen and (max-width : $mobile-max-width) {
             margin-top: 1rem;
         }
             
@@ -176,6 +209,9 @@ img{
         font-weight: bold;
         margin-top:1.5rem;
         margin-bottom:0rem;
+        @media screen and (max-width:$mobile-max-width){
+            margin-top:0.5rem;
+        }
     }
     .type{
         margin-top:0rem;
@@ -199,6 +235,9 @@ img{
             font-weight: bold;
             margin-top:1.5rem;
             margin-bottom:0rem;
+            @media screen and (max-width:$mobile-max-width) {
+                margin-top:1rem;
+            }
         }
         .collaboration{
             font-size: 0.8rem;
@@ -216,13 +255,11 @@ img{
         margin-top: 2rem;
         
         @media screen and (min-width : $tablet-min-width) and (max-width : $tablet-max-width) {
-            /* Styles */
             margin-top: 1rem;
         }
     }
     .process-steps{
         @media screen and (min-width : $tablet-min-width) and (max-width : $tablet-max-width) {
-            /* Styles */
             margin-top: 0.5rem;
         }
     }
@@ -236,15 +273,13 @@ img{
     }
 
     //aerial defence
-    @media screen and (min-width:$tablet-min-width) and (max-width:$tablet-max-width) {
-        .margin-interaction{
+    .margin-interaction{
+        @media screen and (max-width:$tablet-max-width) {
             margin-top:1rem;
-        }
-        .description{
-        
-        }
-            
+        }    
     }
+    
+    
     
 }
 

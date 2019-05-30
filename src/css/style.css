@@ -27,6 +27,9 @@ img {
   letter-spacing: 0.1rem; }
   .nav-header:hover {
     cursor: pointer; }
+  @media screen and (max-width: 420px) {
+    .nav-header.email {
+      display: none; } }
 
 #main {
   text-align: center;
@@ -38,6 +41,13 @@ img {
       margin-top: 4rem;
       margin-bottom: 6rem;
       font-size: 2rem; } }
+  @media screen and (max-width: 420px) {
+    #main {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 1.5rem; }
+      #main .primary-button {
+        display: none; } }
   #main .name-header {
     font-family: 'Playfair Display', serif;
     font-size: 6.25rem;
@@ -49,6 +59,9 @@ img {
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       #main .name-header {
         font-size: 6rem; } }
+    @media screen and (max-width: 420px) {
+      #main .name-header {
+        font-size: 3rem; } }
   #main .title {
     margin-bottom: 0rem;
     font-weight: bold; }
@@ -74,16 +87,21 @@ img {
   border-right: 2px solid #c6c6c6; }
   #body .section-line.about {
     max-width: 14.66667%; }
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
+    @media screen and (max-width: 1024px) {
       #body .section-line.about {
         display: none; } }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    #body .section-line.works {
-      border-right: none; }
-      #body .section-line.works .section-header-no {
-        display: none; }
-      #body .section-line.works .section-header {
-        margin-left: 0rem; } }
+  #body .section-line.works {
+    margin-bottom: 1.5rem; }
+    @media screen and (max-width: 1024px) {
+      #body .section-line.works {
+        border-right: none; }
+        #body .section-line.works .section-header-no {
+          display: none; }
+        #body .section-line.works .section-header {
+          margin-left: 0rem; } }
+    @media screen and (max-width: 420px) {
+      #body .section-line.works {
+        margin-bottom: 0rem; } }
 
 #body .description {
   margin-top: 1.5rem; }
@@ -107,7 +125,9 @@ img {
   margin-bottom: 5rem; }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     .project-card {
-      /* Styles */
+      margin-bottom: 2.5rem; } }
+  @media screen and (max-width: 420px) {
+    .project-card {
       margin-bottom: 2.5rem; } }
   .project-card .title {
     font-weight: bold;
@@ -115,12 +135,17 @@ img {
     color: black; }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       .project-card .title {
-        /* Styles */
+        margin-top: 1rem; } }
+    @media screen and (max-width: 420px) {
+      .project-card .title {
         margin-top: 1rem; } }
   .project-card .role {
     font-weight: bold;
     margin-top: 1.5rem;
     margin-bottom: 0rem; }
+    @media screen and (max-width: 420px) {
+      .project-card .role {
+        margin-top: 0.5rem; } }
   .project-card .type {
     margin-top: 0rem;
     margin-bottom: 0rem; }
@@ -137,6 +162,9 @@ img {
     font-weight: bold;
     margin-top: 1.5rem;
     margin-bottom: 0rem; }
+    @media screen and (max-width: 420px) {
+      #project-page .project-details .role {
+        margin-top: 1rem; } }
   #project-page .project-details .collaboration {
     font-size: 0.8rem; }
   #project-page .project-details .competition-name {
@@ -149,11 +177,9 @@ img {
     margin-top: 2rem; }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       #project-page .title {
-        /* Styles */
         margin-top: 1rem; } }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     #project-page .process-steps {
-      /* Styles */
       margin-top: 0.5rem; } }
   #project-page .proj-header {
     font-weight: bold;
@@ -161,7 +187,7 @@ img {
   #project-page .subtitle {
     font-size: 0.8em;
     font-style: italic; }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     #project-page .margin-interaction {
       margin-top: 1rem; } }
 
