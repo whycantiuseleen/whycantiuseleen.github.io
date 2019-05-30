@@ -5,11 +5,10 @@ $accent-color2: #E0E0E0;
 
 // Breakpoints
 
-$mobile-portrait: 767px;
-// $mobile-landscape:
-// $tablet-portrait:
-// $tablet-landscape:
+$mobile-max-width: 767px;
 
+$tablet-min-width: 768px;
+$tablet-max-width: 1024px;
 
 body{
     overflow-x: hidden;
@@ -57,7 +56,13 @@ img{
 #main{
     text-align: center; 
     margin-top: 9rem;
+    margin-bottom: 12rem;
     font-size: 2.5rem;
+    @media screen and (min-width : $tablet-min-width) and (max-width : $tablet-max-width) {
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+        font-size:2rem;
+    }
     .name-header{
         font-family: 'Playfair Display', serif;
         font-size: 6.25rem;
@@ -66,6 +71,11 @@ img{
         color: $accent-color1;
         margin-bottom: 0rem;
         text-shadow: 0px 6px 6px $accent-color2;
+        @media screen and (min-width : $tablet-min-width) and (max-width : $tablet-max-width) {
+            font-size: 6rem;
+        }
+    
+
     }
     .title{
         margin-bottom: 0rem;
@@ -80,7 +90,6 @@ img{
 }
 
 #body{
-    margin-top: 12rem;
     .section-header-no{
         font-weight: bold;
         letter-spacing: 0.1rem;
@@ -100,6 +109,35 @@ img{
         border-right:2px solid $secondary-color;
         &.about{
             max-width: 14.66667%;
+            @media screen and (min-width: $tablet-min-width) and (max-width:$tablet-max-width) {
+                display: none; 
+            }
+        }
+        &.works{
+            @media screen and (min-width: $tablet-min-width) and (max-width:$tablet-max-width) {
+                border-right: none;
+                
+                .section-header-no{
+                    display: none; 
+                }
+                .section-header{
+                    margin-left:0rem;
+                }
+            }
+        }
+    }
+
+    .description{
+        margin-top: 1.5rem;
+        button{
+            margin-top: 1rem;
+            @media screen and (min-width:$tablet-min-width) and (max-width:$tablet-max-width){
+                margin-top:0rem;
+            }
+        }
+        @media screen and (min-width:$tablet-min-width) and (max-width: $tablet-max-width){
+            margin-top:0rem;
+
         }
     }
 
@@ -117,11 +155,23 @@ img{
 
 .project-card{
     margin-bottom: 5rem;
+    @media screen and (min-width : $tablet-min-width) and (max-width : $tablet-max-width) {
+        /* Styles */
+        margin-bottom:2.5rem;
+    }
+
     .title{
         font-weight:bold;
         letter-spacing: 0.1rem;
         color:black;
+      
+        @media screen and (min-width : $tablet-min-width) and (max-width : $tablet-max-width) {
+            /* Styles */
+            margin-top: 1rem;
+        }
+            
     }
+    
     .role{
         font-weight: bold;
         margin-top:1.5rem;
@@ -164,10 +214,21 @@ img{
         text-shadow: 0px 3px 6px $accent-color2;
 
         margin-top: 2rem;
+        
+        @media screen and (min-width : $tablet-min-width) and (max-width : $tablet-max-width) {
+            /* Styles */
+            margin-top: 1rem;
+        }
+    }
+    .process-steps{
+        @media screen and (min-width : $tablet-min-width) and (max-width : $tablet-max-width) {
+            /* Styles */
+            margin-top: 0.5rem;
+        }
     }
     .proj-header{
        font-weight: bold;
-       margin-top: 0.5rem;
+       margin-top: 1rem;
     }
     .subtitle{
         font-size: 0.8em;
@@ -263,6 +324,8 @@ img{
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
+
+    
   
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
