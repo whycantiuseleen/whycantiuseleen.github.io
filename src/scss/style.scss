@@ -58,7 +58,16 @@ img{
         }
     }
 }
+.nav-link{
+    color: #595959;
+}
 
+.nav-link:hover{
+font-weight: bold;
+color: #595959;
+border-bottom: 1px solid #595959;
+}
+  
 #main{
     text-align: center; 
     margin-top: 9rem;
