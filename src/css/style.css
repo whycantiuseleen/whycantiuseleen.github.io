@@ -269,3 +269,14 @@ img {
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
   font-feature-settings: 'liga'; }
+
+
+.nav-link{
+  color: #595959;
+}
+
+.nav-link:hover{
+  font-weight: bold;
+  color: #595959;
+  border-bottom: 1px solid #595959;
+}
